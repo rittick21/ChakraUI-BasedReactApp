@@ -33,7 +33,7 @@ const Header = () => {
         <BiMenuAltLeft size={'20'} />
       </Button>
 
-      <Drawer isOpen={isOpen} placement="left" onClick={onClose}>
+      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />

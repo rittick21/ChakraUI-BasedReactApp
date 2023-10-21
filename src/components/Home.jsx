@@ -20,7 +20,7 @@ const headingOptions = {
 
 const Home = () => {
     return <Box>
-        <MyCarousel />
+        <MyCarousel/>
 
         <Container maxW={'container.xl'} p={'16'}>
             <Heading

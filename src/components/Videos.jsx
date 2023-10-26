@@ -13,6 +13,7 @@ const Videos = () => {
     {"i": "7", "link": 'https//player.vimeo.com/progressive_redirect/playback/690770660/rendition/720p?loc=external&oauth2_token_id=1027659655&signature=3a048039957fd878fc72b809b9a0e5f2102eded879a83e00784ecd3ba5123614'}
   ]
 
+
   const [videoSrc, setVideoSrc] = useState({sIndex: videoArray[0].i, sLink: videoArray[0].link});
   return (
     <Stack direction={['column', 'row']} h={'100vh'}>
@@ -44,8 +45,8 @@ const Videos = () => {
         {videoArray.map((item, index) => {
           return <Button
             onClick={() => {
-              setVideoSrc({sIndex: item.i, sLink: item.link})
-              console.log(item.i + " " + item.link) 
+              setVideoSrc({sIndex: item.i, sLink: item.link});
+              // console.log(item.i + " " + item.link) 
             }}
             variant={'ghost'}
             colorScheme={'purple'}

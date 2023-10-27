@@ -23,7 +23,7 @@ const Videos = () => {
           controls
           controlsList='nodownload'
           style={{ width: "100%" }}
-          src={videoSrc.sLink}
+          src={toString(videoSrc.sLink)}
         >
         </video>
         <VStack
